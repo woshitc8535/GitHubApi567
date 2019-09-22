@@ -5,9 +5,11 @@ from Api_567 import get_github
 
 class BuggyApiTest(unittest.TestCase):
     def test_check_api(self):
-        self.assertEqual(get_github('woshitc8535'),
-                         ['Repo: GitHubApi567 Number of commits: 3', 'Repo: hello-world Number of commits: 5',
-                          'Repo: SSW_567 Number of commits: 10', 'Repo: wenxuanLiu Number of commits: 1'])
+        self.assertEqual(get_github('richkempinski'),
+                         ['Repo: hellogitworld Number of commits: 30', 'Repo: helloworld Number of commits: 6',
+                          'Repo: Mocks Number of commits: 10', 'Repo: Project1 Number of commits: 2',
+                          'Repo: threads-of-life Number of commits: 1']
+                         )
 
 
 if __name__ == '__main__':
